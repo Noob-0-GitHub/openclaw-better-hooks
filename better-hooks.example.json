@@ -1,0 +1,36 @@
+{
+  "_comment": "OpenClaw Better Hooks Configuration Example",
+  "events": {
+    "agent:error:lock": {
+      "description": "Triggered when thinking lock is stuck",
+      "regex": "Error: lock file exists"
+    },
+    "message:sent:telegram": {
+      "description": "Triggered when Telegram successfully sends a message",
+      "regex": "telegram sendMessage ok"
+    }
+  },
+  "hooks": {
+    "agent:error:lock": {
+      "cooldown_ms": 5000,
+      "actions": [
+        {
+          "type": "command",
+          "cmd": "rm -f /tmp/openclaw_thinking.lock"
+        }
+      ]
+    },
+    "message:received": {
+      "actions": [
+        {
+          "type": "webhook",
+          "url": "https://api.your-smarthome.com/trigger?msg={{content}}"
+        },
+        {
+          "type": "script",
+          "file": "log_message.ts"
+        }
+      ]
+    }
+  }
+}

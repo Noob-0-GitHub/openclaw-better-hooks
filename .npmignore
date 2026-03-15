@@ -1,0 +1,6 @@
+test.sh
+test.out.log
+*.tgz
+*.bak
+*.test_bak
+tests/

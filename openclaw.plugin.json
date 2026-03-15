@@ -1,0 +1,12 @@
+{
+  "id": "openclaw-better-hooks",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  }
+}
