@@ -1,6 +1,6 @@
 {
   "name": "openclaw-better-hooks",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "System-wide log event bus implemented as an OpenClaw Plugin.",
   "type": "module",
   "license": "MIT",
@@ -25,6 +25,14 @@
       "npmSpec": "openclaw-better-hooks"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noob-0-GitHub/openclaw-better-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Noob-0-GitHub/openclaw-better-hooks/issues"
+  },
+  "homepage": "https://github.com/Noob-0-GitHub/openclaw-better-hooks#readme",
   "dependencies": {
     "commander": "^14.0.3",
     "jiti": "^2.6.1"
