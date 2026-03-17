@@ -25,6 +25,9 @@
       "npmSpec": "openclaw-better-hooks"
     }
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Noob-0-GitHub/openclaw-better-hooks.git"
